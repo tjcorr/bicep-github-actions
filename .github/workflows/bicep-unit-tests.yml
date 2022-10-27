@@ -59,6 +59,12 @@ jobs:
       uses: bridgecrewio/checkov-action@master
       with: 
         framework: bicep
+        
+    - name: list
+      run: |
+        ls -lh
+        cat results.sarif
+        cat checkov*
 
     # Upload results to GitHub Advanced Security
     - name: Upload SARIF file
