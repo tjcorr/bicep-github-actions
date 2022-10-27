@@ -11,7 +11,7 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2021-05-01' = {
         properties: {
           access: 'Allow'
           destinationAddressPrefix: '*'
-          destinationPortRange: '*'
+          destinationPortRange: '22'
           direction: 'Inbound'
           priority: 100
           protocol: '*'
