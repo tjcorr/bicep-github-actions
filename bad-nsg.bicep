@@ -14,7 +14,7 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2021-05-01' = {
           destinationPortRange: '22'
           direction: 'Inbound'
           priority: 100
-          protocol: '*'
+          protocol: 'TCP'
           sourceAddressPrefix: '*'
           sourcePortRange: '*'
         }
